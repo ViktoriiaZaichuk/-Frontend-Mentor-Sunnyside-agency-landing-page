@@ -1,1 +1,1 @@
-# -Frontend-Mentor-Sunnyside-agency-landing-page
+# Frontend-Mentor-Sunnyside-agency-landing-page
