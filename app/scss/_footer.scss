@@ -1,0 +1,19 @@
+/* FOOTER */
+footer {
+    background-color: hsla(168, 34%, 41%, 0.61);
+    padding: 2rem 0;
+    > div {
+        margin: 2rem 0;
+    }
+    ul li {
+        margin: 0 2rem;
+        & a {
+            color: #2c7566;
+            font-weight: 500;
+            transition: .3s;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}

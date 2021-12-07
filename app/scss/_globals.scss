@@ -1,0 +1,101 @@
+/* GENERAL STYLES */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    font-size: 1.8rem;
+    font-family: $bodyTextFont;
+    background-color: $white;
+    color: $darkBlue;
+}
+
+
+/* TEXT */
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3 {
+    font-family: $displayFont;
+}
+
+p {
+    font-weight: 500;
+}
+
+
+/* SPACING */
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+    @include screenMin1440 {
+        max-width: 1440px;
+    }
+}
+.containerTxt {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* FLEXBOX */
+.flex {
+    display: flex; 
+
+    &-jc-sb {
+      justify-content: space-between;
+    }
+
+    &-jc-c {
+      justify-content: center;
+    }
+
+    &-jc-sa {
+        justify-content: space-around;
+      }
+      
+    
+    &-ai-c {
+      align-items: center;
+    }
+    &-ai-s {
+        align-items: start;
+    }
+    
+    &-fd-c {
+        flex-direction: column;
+    }
+
+    &-js-c {
+        justify-self: center;
+    }
+
+    &-js-fe {
+        justify-self: end;
+    }
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    padding: 1rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

@@ -1,0 +1,118 @@
+/* HEADER */
+
+header {
+    min-height: 100vh;
+    background-image: url("../../images/mobile/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    @include screenMax768 {
+        background-image: url("../../images/desktop/image-header.jpg");
+    }
+    & nav {
+        padding-top: 2rem;
+        position: relative;
+        & .mobile-menu {
+            height: 2rem;
+            cursor: pointer;
+            @include screenMax768 {
+                display: none;
+            }
+            & span {
+            display: block;
+            height: 1.5px;
+            width: 2.4rem;
+            background-color: $white;
+            }
+        }
+        & .mobile-menu-active {
+            visibility: hidden;
+            position: absolute;
+            top: 8rem;
+            width: 100%;
+            background-color: $white;
+            z-index: 10;
+            padding: 3rem;
+            & li {
+                margin: 1.5rem 0;
+                & a {
+                    color: $darkGrayishBlue;
+                    font-weight: 600;
+                }
+            }
+            & button {
+                display: inline-block;
+                background-color: $yellow;
+                color: $veryDarkDesaturatedBlue;
+                padding: 1.5rem 2rem;
+                text-transform: uppercase;
+                font-family: $displayFont;
+                border: none;
+                border-radius: 2.2rem;
+                cursor: pointer;
+                transition: .3s;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                right: 0%;
+                top: -10%;
+                border-bottom: 70px solid $white;
+                border-left: 70px solid transparent;
+            }
+        }
+        &.open {
+            .mobile-menu-active {
+                visibility: visible;
+            }
+        }
+        & .main-menu {
+            display: none;
+            @include screenMax768 {
+                display: flex;
+            }
+            & li {
+                margin: 0 2rem;
+            }
+            & a {
+                color: $white;
+                transition: .3s;
+                &:hover {
+                    color: $veryDarkDesaturatedBlue;
+                }
+            }
+            & button {
+                display: inline-block;
+                background-color: $white;
+                color: $veryDarkDesaturatedBlue;
+                padding: 1.5rem 2rem;
+                text-transform: uppercase;
+                font-family: $displayFont;
+                border: none;
+                border-radius: 2.2rem;
+                cursor: pointer;
+                transition: .3s;
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.404);
+                    color: $white;
+                }
+            }
+
+        }
+    }
+    & .hero {
+        margin-top: 7rem;
+        color: $white;
+        & h1 {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 4.5rem;
+            padding: 0 1rem;
+            letter-spacing: .5rem;
+            padding-bottom: 5rem;
+            @include screenMax768 {
+                font-size: 7rem;
+            }
+        }
+    }
+}

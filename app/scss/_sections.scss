@@ -1,0 +1,241 @@
+/* SERVICES */
+#services {
+    & .service-d {
+        @include screenMax768 {
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+            min-height: 70vh;
+        }
+        > div {
+            flex: 1 1 0px;
+            text-align: center;
+            min-height: 50vh;
+            @include screenMax768 {
+                text-align: left;
+            }
+            > div {
+                max-width: 50rem;
+                padding: 0 2rem;
+            }
+        }
+        & p {
+            color: $darkGrayishBlue;
+            padding: 3rem 0;
+        }
+    }
+    h2 {
+        color: $veryDarkDesaturatedBlue;
+        font-size: 3.5rem;
+    }
+    .service-d-img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        flex-grow: 1;
+        position: relative;
+    }
+    button {
+        background-color: transparent;
+        display: inline-block;
+        width: fit-content;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        text-transform: uppercase;
+        font-family: $displayFont;
+        border: none;
+        cursor: pointer;
+        color: $veryDarkDesaturatedBlue;
+        font-weight: 900;
+        font-size: 1.8rem;
+        @include screenMax768 {
+            text-align: left;
+            margin: 0;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 110%;
+            height: 50%;
+            border-radius: .5rem;
+            top: 90%;  
+            left: 50%; 
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            opacity: .4;
+            transition: .3s;
+        }
+        &:hover::after {
+            opacity: 1;
+        } 
+    }
+    .btn01 {
+        &::after {
+            background-color: $yellow;
+        }
+    }
+    .btn02 {
+        &::after {
+            background-color: $softRed;
+        }
+    }
+    .service-d-01 {
+        & .service-d-img {
+            background-image: url("../../images/mobile/image-transform.jpg");
+            @include screenMax768 {
+                background-image: url("../../images/desktop/image-transform.jpg");
+            }
+        }
+    }
+    .service-d-02 {
+        @include screenMax768 {
+            flex-direction: row;
+        }
+        & .service-d-img {
+            background-image: url("../../images/mobile/image-stand-out.jpg");
+            @include screenMax768 {
+                background-image: url("../../images/desktop/image-stand-out.jpg");
+            }
+        }
+    }
+
+    .service-d-03 {
+        > div {
+            flex: 1 1 0px;
+            text-align: center;
+            min-height: 70vh;
+            justify-content: flex-end;
+            & p {
+                max-width: 40rem;
+                padding: 2rem 1rem 3rem 1rem;
+            }
+            & h3 {
+                font-weight: 900;
+                font-size: 2.2rem;
+            }
+        }
+        @include screenMax768 {
+            flex-direction: row;
+            min-height: 70vh;
+            text-align: left;
+        }
+        & .service-d-img01 {
+            background-image: url("../../images/mobile/image-graphic-design.jpg");
+            background-position: center top;
+            color: $darkDesaturatedCyan;
+            @include screenMax768 {
+                background-image: url("../../images/desktop/image-graphic-design.jpg");
+            }
+        }
+        & .service-d-img02 {
+            background-image: url("../../images/mobile/image-photography.jpg");
+            background-position: center top;
+            color: $darkBlue;
+            @include screenMax768 {
+                background-image: url("../../images/desktop/image-photography.jpg");
+            }
+        }
+    }
+}
+
+
+/* TESTIMONIALS */
+.testimonials {
+    padding: 5rem 0;
+    @include screenMax768 {
+        padding: 10rem 0;
+    }
+    > div > div {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    h3 {
+        text-align: center;
+        color: $grayishBlue;
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+    p {
+        color: $veryDarkGrayishBlue;
+        max-width: 40rem;
+    }
+    .t-name {
+        font-family: $displayFont;
+        color: $veryDarkDesaturatedBlue;
+        margin-bottom: 1rem;
+    }
+    .t-txt {
+        padding: 3rem 0;
+        text-align: center;
+    }
+    .t-post {
+        color: $grayishBlue;
+        font-size: 1.6rem;
+    }
+    & .testimonials-d {
+        @include screenMax768 {
+            flex-direction: row;
+        }
+        > div {
+            padding: 0 1rem;
+        }
+        & figure {
+            overflow: hidden;
+            border-radius: 50%;
+            & img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+/* GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 0px 0px; 
+    width: 100%; 
+    height: 100%; 
+    @include screenMax768 {
+        grid-template-columns: 1fr 1fr 1fr 1fr; 
+        grid-template-rows: 1fr; 
+    }
+    & .gall-img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        min-height: 30vh;
+        @include screenMax768 {
+            min-height: 50vh;
+        }
+    }
+    & .gall-img01 {
+        background-image: url("../../images/mobile/image-gallery-milkbottles.jpg");
+        @include screenMax768 {
+            background-image: url("../../images/desktop/image-gallery-milkbottles.jpg");
+        }
+    }
+    & .gall-img02 {
+        background-image: url("../../images/mobile/image-gallery-orange.jpg");
+        @include screenMax768 {
+            background-image: url("../../images/desktop/image-gallery-orange.jpg");
+        }
+    }
+    & .gall-img03 {
+        background-image: url("../../images/mobile/image-gallery-cone.jpg");
+        @include screenMax768 {
+            background-image: url("../../images/desktop/image-gallery-cone.jpg");
+        }
+    }
+    & .gall-img04 {
+        background-image: url("../../images/mobile//image-gallery-sugar-cubes.jpg");
+        @include screenMax768 {
+            background-image: url("../../images/desktop/image-gallery-sugarcubes.jpg");
+        }
+    }
+}

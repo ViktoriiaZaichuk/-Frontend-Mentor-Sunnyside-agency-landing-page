@@ -1,0 +1,35 @@
+/* TYPOGRAPHY */
+$displayFont: 'Fraunces', serif;
+$bodyTextFont: 'Barlow', sans-serif;
+
+
+/* COLORS */
+$softRed: hsl(7, 99%, 70%);
+$yellow: hsl(51, 100%, 49%);
+$darkDesaturatedCyan: hsl(167, 40%, 24%);
+$darkBlue: hsl(198, 62%, 26%);
+$darkModerateCyan: hsl(168, 34%, 41%);
+
+$veryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+$veryDarkGrayishBlue: hsl(213, 9%, 39%);
+$darkGrayishBlue: hsl(232, 10%, 55%);
+$grayishBlue: hsl(210, 4%, 67%);
+$white: hsl(0, 0%, 100%);
+
+
+/* MIXINS RESPONSIVE */
+$screenMin1440: 1440px;
+$screenMax768: 768px;
+
+@mixin screenMin1440 {
+    @media (min-width: #{$screenMin1440}) {
+      @content;
+    }
+}
+
+@mixin screenMax768 {
+    @media (min-width: #{$screenMax768}) {
+      @content;
+    }
+}
+
