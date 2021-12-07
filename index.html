@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/css/main.css">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="container flex flex-ai-c flex-jc-sb">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="Logo Sunnyside">
+      </div>
+      <div id="menuBtn" class="mobile-menu flex flex-ai-c flex-fd-c flex-jc-sb">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="mobile-menu-active">
+        <ul class="flex flex-fd-c flex-ai-c flex-jc-sb">
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Projects</a></li>
+          <li><button>Contact</button></li>
+        </ul> 
+      </div>
+
+      <div class="main-menu">
+        <ul class="flex flex-ai-c flex-jc-sb">
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Projects</a></li>
+          <li><button>Contact</button></li>
+        </ul> 
+      </div>
+
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero flex flex-fd-c flex-ai-c">
+      <h1>We are creatives</h1>
+      <div>
+        <a href="#services">
+          <img src="./images/icon-arrow-down.svg" alt="Arrow down">
+        </a>
+      </div>
+    </section>
+  </header>
+  
+  
+  <!-- SERVICES -->
+  <section id="services" class="flex flex-fd-c">
+
+    <div class="service-d service-d-01 flex flex-fd-c">
+      <div class="service-d-img"></div>
+      <div class="flex flex-ai-c flex-jc-c">
+        <div class="flex flex-fd-c flex-jc-c">
+          <h2>Transform your brand</h2>
+          <p>We are a full-service creative agency specializing in helping brands grow fast. 
+            Engage your clients through compelling visuals that do most of the marketing for you.</p>
+          <button class="btn01">Learn more</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-d service-d-02 flex flex-fd-c">
+        <div class="service-d-img"></div>
+        <div class="flex flex-ai-c flex-jc-c">
+          <div class="flex flex-fd-c flex-jc-c">
+            <h2>Stand out to the right audience</h2>
+            <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+            <button class="btn02">Learn more</button>
+          </div>
+        </div>
+    </div>
+
+    <div class="service-d-03 flex flex-fd-c">
+        <div class="service-d-img service-d-img01 flex flex-fd-c flex-ai-c">
+          <h3>Graphic design</h3>
+          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </div>
+        <div class="service-d-img service-d-img02 flex flex-fd-c flex-ai-c">
+          <h3>Photography</h3>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+    </div>
+
+  </section>
+    
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials container flex flex-fd-c flex-ai-c">
+      <h3>Client testimonials</h3>
+
+      <div class="testimonials-d flex flex-fd-c">
+        <!-- TESTIMONIAL 01 -->
+        <div class="flex flex-fd-c flex-ai-c">
+          <figure>
+            <img src="./images/image-emily.jpg" alt="Testimonials">
+          </figure>
+          <p class="t-txt containerTxt">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <p class="t-name">Emily R.</p>
+          <p class="t-post">Marketing Director</p>
+        </div>
+
+        <!-- TESTIMONIAL 02 -->
+        <div class="flex flex-fd-c flex-ai-c">
+          <figure>
+            <img src="./images/image-thomas.jpg" alt="Testimonials">
+          </figure>
+          <p class="t-txt containerTxt">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <p class="t-name">Thomas S.</p>
+          <p class="t-post">Chief Operating Officer</p>
+        </div>
+
+        <!-- TESTIMONIAL 03 -->
+        <div class="flex flex-fd-c flex-ai-c">
+          <figure>
+            <img src="./images/image-jennie.jpg" alt="Testimonials">
+          </figure>
+          <p class="t-txt containerTxt">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <p class="t-name">Jennie F.</p>
+          <p class="t-post">Business Owner</p>
+        </div>
+      </div>
+      
+    </section>
+    
+    <!-- IMAGES -->
+    <section class="gallery">      
+      <figure class="gall-img gall-img01"></figure>
+      <figure class="gall-img gall-img02"></figure>
+      <figure class="gall-img gall-img03"></figure>
+      <figure class="gall-img gall-img04"></figure>
+    </section>
+  
+
+  <!-- FOOTER -->
+  <footer class="flex flex-fd-c flex-ai-c"> 
+    <div>
+      <img src="./images/logo-footer.svg" alt="">
+    </div>
+    <div>
+      <ul class="flex flex-ai-c">
+        <li><a href="">About</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Projects</a></li>
+      </ul>
+    </div>
+    <div>
+      <ul class="flex flex-ai-c">
+        <li><a href=""><img src="./images/icon-facebook.svg" alt="Facebook"></a></li>
+        <li><a href=""><img src="./images/icon-instagram.svg" alt="Instagram"></a></li>
+        <li><a href=""><img src="./images/icon-twitter.svg" alt="Twitter"></a></li>
+        <li><a href=""><img src="./images/icon-pinterest.svg" alt="Pinterest"></a></li>
+      </ul>
+    </div>
+
+  </footer>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://vikazaichuk.com/">Vika Zaichuk</a>.
+  </div>
+
+  <script src="app/js/script.js"></script>
+</body>
+</html>
+
